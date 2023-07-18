@@ -1,0 +1,96 @@
+
+html {
+    background-image: url(LakeGifButBlue.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Lugrasimo, sans-serif;
+}
+body {
+    font-family: Lugrasimo;
+    width: 75%;
+    margin: auto;
+    
+}
+.mainHeading {
+    text-align: center;
+    background-color: #11823ae3;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+article {
+    margin-top: 10px;
+    background-color:  #91f086;
+    padding: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+footer {
+    margin-top: 10px;
+    background-color: #11823b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.navigation {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #004d25cc;
+    display: flex;
+    padding-left: 0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.wrapper, .mnPage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));;
+    grid-gap: 15px;
+}
+
+label {
+    display: block;
+    padding-left: 20px;
+}
+.abtUsDiv, .welcomePar, .vid, .worms, .minnows, .shadow {
+    box-shadow: 0 2px 4px rgba(128, 128, 128, 0.8);
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navigation a:hover {
+    background-color: #91f086;
+    border-right: 2px solid black;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .navigation {
+        display: block;
+    }
+    .mnPage {
+        display: block;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .wrapper {
+        display: block;
+    }
+    img {
+        width: 75%;
+    }
+}
